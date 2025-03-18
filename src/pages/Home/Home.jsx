@@ -26,35 +26,35 @@ const Home = () => {
         onSubmit={async (values, { resetForm, setStatus }) => {
           const result = await submitFeedback(values);
           setStatus(result.message);
-          resetForm(); // Reset form on success
+          resetForm();
         }}
       >
         {({ status }) => (
-          <Form className="mt-4 w-full md:w-8/12  ">
+          <Form className="mt-4 w-full md:w-6/12  ">
            
-            <div className="mb-4">
+            <div className="mb-4 rounded-lg">
               <Field
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="border p-2 w-full"
+                className="border p-2 w-full rounded-lg"
               />
               <ErrorMessage name="name" component="p" className="text-red-500" />
             </div>
 
            
-            <div className="mb-4">
+            <div className="mb-4 rounded-lg">
               <Field
                 as="textarea"
                 name="message"
                 placeholder="Your Message"
-                className="border p-2 w-full"
+                className="border p-2 w-full rounded-lg"
               />
               <ErrorMessage name="message" component="p" className="text-red-500" />
             </div>
 
             
-            <button type="submit" className="bg-blue-500 text-white p-2 w-full">
+            <button type="submit" className="bg-blue-500 text-white p-2 w-full rounded-lg">
               Submit
             </button>
 
@@ -63,7 +63,7 @@ const Home = () => {
           </Form>
         )}
       </Formik>
-      <div className="w-fit h-fit bg-blue-600 text-white mt-12">
+      <div className="w-fit h-fit bg-blue-600 text-white mt-12 rounded-lg">
         <Link className="p-6" to={"/feedback"}>
         Feedback List
         </Link>
