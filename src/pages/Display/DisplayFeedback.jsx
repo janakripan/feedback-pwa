@@ -12,7 +12,7 @@ function DisplayFeedback() {
 
   return (
     <div className='w-full max-w-screen-xl h-fit min-h-screen p-4 md:p-10 mx-auto'>
-        <ul className='w-full h-full grid md:grid-cols-3 lg:grid-cols-5 gap-4'>
+        <ul className='w-full h-full grid md:grid-cols-3 lg:grid-cols-4 gap-4'>
             {
                 feedbackList.map((feedback)=>(
                     <DisplayCard

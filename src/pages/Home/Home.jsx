@@ -17,8 +17,8 @@ const Home = () => {
   });
 
   return (
-    <div className="p-4 w-full max-w-screen-xl mx-auto flex flex-col items-center">
-      <h2 className="text-xl font-bold">Submit Feedback</h2>
+    <div className="p-4 w-full max-w-screen-xl h-full min-h-screen mx-auto flex flex-col items-center justify-center">
+      <h2 className="text-2xl font-semibold text-gray-900 mb-6">Submit Feedback</h2>
       
       <Formik
         initialValues={{ name: "", message: "" }}
@@ -30,14 +30,14 @@ const Home = () => {
         }}
       >
         {({ status }) => (
-          <Form className="mt-4 w-full md:w-6/12  ">
+          <Form className="mt-4 w-full md:w-8/12 lg:w-6/12  ">
            
             <div className="mb-4 rounded-lg">
               <Field
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="border p-2 w-full rounded-lg"
+                className="border  border-blue-400 bg-[#f8fcff]  p-2 w-full focus:outline-blue-500  rounded-lg"
               />
               <ErrorMessage name="name" component="p" className="text-red-500" />
             </div>
@@ -48,7 +48,7 @@ const Home = () => {
                 as="textarea"
                 name="message"
                 placeholder="Your Message"
-                className="border p-2 w-full rounded-lg"
+                className="border border-blue-400 bg-[#f8fcff]  p-2 w-full focus:outline-blue-500 rounded-lg"
               />
               <ErrorMessage name="message" component="p" className="text-red-500" />
             </div>
