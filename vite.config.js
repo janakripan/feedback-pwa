@@ -22,13 +22,20 @@ export default defineConfig({
     },
 
     workbox: {
-      globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
+      globPatterns: ['**/*.{js,css,html,svg,png,ico}'], 
       cleanupOutdatedCaches: true,
       clientsClaim: true,
       runtimeCaching: [
         {
           urlPattern: /^https:\/\/your-api\.mockapi\.io\/feedback/,
           handler: 'NetworkFirst',
+          options: {
+            cacheName: 'api-cache',
+            expiration: {
+              maxEntries: 50,
+              maxAgeSeconds: 60 * 60 * 24,  // Cache for 1 day
+            },
+          },
         },
       ],
     },

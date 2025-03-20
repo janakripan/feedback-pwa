@@ -3,12 +3,12 @@ import { navlinks } from '../utils/navlinks'
 import { NavLink } from 'react-router'
 import { MdOutlineMenuOpen } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
-import { li } from 'framer-motion/client';
+
 
 function Navbar() {
     const [isOpen , setIsOpen] = useState(false)
   return (
-    <div className='w-full h-fit py-5  max-w-screen-xl mx-auto relative bg-gra p-4'>
+    <div className='w-full h-fit py-5  max-w-screen-xl mx-auto relative p-4  '>
 
         <h1 className='w-full h-full font-semibold text-center lg:text-4xl  text-2xl md:text-3xl '>
             FeedBook
@@ -39,7 +39,7 @@ function Navbar() {
        
 
         </div>
-        <div className={` md:hidden absolute -bottom-24 border border-blue-400 bg-white rounded-lg py-4 right-0 w-8/12 h-fit flex flex-col transition-all duration-300
+        <div className={` md:hidden absolute z-[999] top-full border border-blue-400 bg-white rounded-lg py-4 right-0 w-8/12 h-fit flex flex-col transition-all duration-300
             ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
             {
                 navlinks.map((items,index)=>(

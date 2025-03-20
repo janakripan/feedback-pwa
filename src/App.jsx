@@ -6,13 +6,13 @@ function App() {
  
 
   return (
-    <>
+    <div className='overflow-x-hidden'>
     <Navbar/>
       <div id='detail'>
         <Outlet/>
       </div>
       <PWABadge />
-    </>
+    </div>
   )
 }
 
