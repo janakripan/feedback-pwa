@@ -39,7 +39,7 @@ function Navbar() {
        
 
         </div>
-        <div className={`md:hidden absolute -bottom-24 border border-blue-400 bg-white rounded-lg py-4 right-0 w-8/12 h-fit flex flex-col transition-all duration-300
+        <div className={` md:hidden absolute -bottom-24 border border-blue-400 bg-white rounded-lg py-4 right-0 w-8/12 h-fit flex flex-col transition-all duration-300
             ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
             {
                 navlinks.map((items,index)=>(
