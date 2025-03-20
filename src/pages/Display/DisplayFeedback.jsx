@@ -11,17 +11,17 @@ function DisplayFeedback() {
 
   return (
     <div className='w-full max-w-screen-xl h-fit min-h-screen p-4 mx-auto'>
-      <div className='w-full h-full min-h-[80vh]  flex flex-row justify-between  '>
+      <div className='w-full h-full md:min-h-[80vh]  flex flex-col md:flex-row justify-between md:items-center '>
        <div className='h-full w-fit pt-12'>
-       <h1 className='text-7xl whitespace-nowrap font-bold capitalize '>
+       <h1 className='lg:text-7xl md:text-6xl text-4xl  whitespace-nowrap font-bold capitalize '>
           We value your <br /> feedback
         </h1>
-        <p className='text-3xl font-semibold mt-24 whitespace-nowrap '>
+        <p className='lg:text-3xl md:text-2xl text-lg font-semibold md:mt-24 mt-10 whitespace-nowrap '>
           Your feedback is important to us . <br /> See the feed backs of other users.
         </p>
        </div>
-       <div className=' w-5/12  '>
-        <img src={bgPic} className=' w-full h-full  aspect-square ' alt="" />
+       <div className=' lg:w-5/12 w-full '>
+        <img src={bgPic} className=' w-full h-full object-cover aspect-square ' alt="" />
        </div>
 
       </div>

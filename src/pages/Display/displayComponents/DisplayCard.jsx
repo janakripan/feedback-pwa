@@ -23,7 +23,7 @@ function DisplayCard({
     
    
   return (
-    <div className='w-full h-72 p-4  outline outline-gray-200 rounded-md shadow-lg flex flex-col  justify-between gap-y-2 ' >
+    <div className='w-full h-72 p-4  outline outline-blue-200 rounded-md shadow-lg flex flex-col  justify-between gap-y-2 ' >
         <h2 className='text-xl lowercase first-letter:capitalize  font-medium mb-4'>
             {name}
         </h2>
