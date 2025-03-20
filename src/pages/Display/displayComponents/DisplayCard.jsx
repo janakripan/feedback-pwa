@@ -28,15 +28,14 @@ function DisplayCard({
             {name}
         </h2>
         <span className='text-sm font-medium text-gray-500/75 tracking-tight w-full flex flex-row items-center gap-1  '>
-             <SlCalender style={{ color: 'black', fontSize:'20' }}/>{formattedDate}
+             <SlCalender style={{ color: 'rgb(59, 130, 246)', fontSize:'20' }}/>{formattedDate}
         </span>
         <span className='text-sm font-medium text-gray-500/75 tracking-tight w-full flex flex-row items-center gap-1 '>
-            <MdOutlineTimer  style={{ color: 'black', fontSize:'23' }}/> {formattedTime}
+            <MdOutlineTimer  style={{ color: 'rgb(59, 130, 246)', fontSize:'23' }}/> {formattedTime}
         </span>
         <p className='text-base capitalize  text-balance text-gray-700 scrollbar-hide font-normal mt-4 flex-1  overflow-auto scrollbar scrollbar-thin '>
             {feedback}
         </p>
-        
       
     </div>
   )

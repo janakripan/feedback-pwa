@@ -63,11 +63,7 @@ const Home = () => {
           </Form>
         )}
       </Formik>
-      <div className="w-fit h-fit bg-blue-600 text-white mt-12 rounded-lg">
-        <Link className="p-6" to={"/feedback"}>
-        Feedback List
-        </Link>
-      </div>
+      
     </div>
   );
 };
