@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [tailwindcss(),react(), VitePWA({
-    registerType: 'autoaUpdate',
+    registerType: 'autoUpdate',
     injectRegister: false,
 
     pwaAssets: {
